@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="mylib">
+    <output-path>$PROJECT_DIR$/out/artifacts/mylib</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: log4j:log4j:1.2.14" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.17" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-mxj-db-files:5.0.12" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-mxj:5.0.12" />
+        </element>
+        <element id="directory" name="classes">
+          <element id="module-output" name="MyArtifacts" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
