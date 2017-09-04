@@ -3,11 +3,7 @@ import java.sql.*;
 public class TestDB {
     public static void main(String args[]) {
         String jdbcDriver = "com.mysql.jdbc.Driver";
-//        String jdbcURL = "jdbc:mysql://127.0.0.1:3306/test";
-//        String jdbcUser = "root";
-//        String jdbcPassword = "!QAZ2wsx";
         String jdbcURLs = "jdbc:mysql://127.0.0.1:3306/test?user=root&password=!QAZ2wsx&useUnicode=true&characterEncoding=utf-8";
-
         String sql = "";
         Connection conn = null;
         try {
@@ -18,14 +14,14 @@ public class TestDB {
             System.out.println("数据库连接成功");
 
             Statement stmt = conn.createStatement();
-            sql = "CREATE TABLE user (" +
-                    "    usrID INT PRIMARY KEY auto_increment," +
-                    "    account VARCHAR(20)," +
-                    "    password VARCHAR(20)," +
-                    "    fullname VARCHAR(20)" +
-                    ")engine=Innodb default charset utf8 collate utf8_general_ci;";
-            stmt.execute(sql);
-            System.out.println("数据表创建成功");
+//            sql = "CREATE TABLE user (" +
+//                    "    usrID INT PRIMARY KEY auto_increment," +
+//                    "    account VARCHAR(20)," +
+//                    "    password VARCHAR(20)," +
+//                    "    fullname VARCHAR(20)" +
+//                    ")engine=Innodb default charset utf8 collate utf8_general_ci;";
+//            stmt.execute(sql);
+//            System.out.println("数据表创建成功");
             sql = "insert into user (`account`,`password`,`fullname`) values ('zhangs','123','张三');";
             stmt.execute(sql);
             sql = "insert into user (`account`,`password`,`fullname`) values ('lis','123','李四')";
